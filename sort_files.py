@@ -1,7 +1,10 @@
 import os
 import shutil
+import sys
 
 import normalize
+
+path_directory=sys.argv[-1]
 
 def collect_fileinfos(path_directory):
     all_types = []
