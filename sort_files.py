@@ -71,6 +71,4 @@ def collect_fileinfos(path_directory):
 
 
 
-collect_fileinfos('/Users/marina/Desktop/hh')
-
 
