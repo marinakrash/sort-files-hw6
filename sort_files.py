@@ -3,10 +3,6 @@ import shutil
 
 import normalize
 
-print(os.listdir('/Users/marina/Desktop/hh'))
-
-path_directory='/Users/marina/Desktop/hh'
-
 def collect_fileinfos(path_directory):
     all_types = []
     arch_files = []
