@@ -27,27 +27,27 @@ def collect_fileinfos(path_directory):
             type = os.path.splitext(filename)[-1]
             all_types.append(type)
             if type in ['.jpeg', '.png', '.jpg', '.svg']:
-                directory = os.sep.join([path_directory, images])
+                directory = os.sep.join([path_directory, 'images'])
                 if not os.path.exists(directory): os.makedirs(directory)
                 shutil.move(path_file, (f'{directory}' + f'/{nor_name}'))
                 img_files.append(nor_name)
             if type in ['.avi', '.mp4', '.mov', '.mkv']:
-                directory = os.sep.join([path_directory, videos])
+                directory = os.sep.join([path_directory, 'videos'])
                 if not os.path.exists(directory): os.makedirs(directory)
                 shutil.move(path_file, (f'{directory}' + f'/{nor_name}'))
                 video_files.append(nor_name)
             if type in ['.doc', '.docx', '.txt', '.pdf', '.xlsx', '.pptx']:
-                directory = os.sep.join([path_directory, documents])
+                directory = os.sep.join([path_directory, 'documents'])
                 if not os.path.exists(directory): os.makedirs(directory)
                 shutil.move(path_file, (f'{directory}' + f'/{nor_name}'))
                 doc_files.append(nor_name)
             if type in ['.mp3', '.ogg', '.wav', '.amr']:
-                directory = os.sep.join([path_directory, audio])
+                directory = os.sep.join([path_directory, 'audio'])
                 if not os.path.exists(directory): os.makedirs(directory)
                 shutil.move(path_file, (f'{directory}' + f'/{nor_name}'))
                 music_files.append(nor_name)
             if type in ['.zip', '.gz', '.tar']:
-                directory = os.sep.join([path_directory, archives])
+                directory = os.sep.join([path_directory, 'archives'])
                 if not os.path.exists(directory): os.makedirs(directory)
                 shutil.move(path_file, (f'{directory}' + f'/{nor_name}'))
                 ar_dir = f'{directory}'+f'{os.path.splitext(nor_name)[:-1]}'
